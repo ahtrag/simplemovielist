@@ -1,13 +1,20 @@
 import React, { useReducer, useEffect } from "react";
 
 const initialState = {
-  movieData: []
+  movieData: [],
+  categories: ["series", "animation", "movie"],
+  selectedCategory: ""
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "FETCH_MOVIE_DATA":
+    case "EDIT_MOVIE_DATA":
+    case "DELETE_MOVIE_DATA":
+    case "ADD_MOVIE_DATA":
       return { ...state, movieData: action.movieData };
+    case "SELECTED_CATEGORY":
+      return { ...state, selectedCategory: action.selectedCategory };
     default:
       throw new Error("Invalid Action");
   }

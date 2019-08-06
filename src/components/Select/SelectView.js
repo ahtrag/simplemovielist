@@ -91,7 +91,7 @@ SelectView.defaultProps = {
 };
 
 SelectView.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  children: PropTypes.any.isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onChange: PropTypes.func.isRequired,
   fullWidth: PropTypes.bool,
