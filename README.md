@@ -1,4 +1,4 @@
-This is a simple view of table using material-table and react hooks.
+This is a simple view of table using material-table and react hooks.<br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
